@@ -47,6 +47,7 @@ def page(page):
     if resultValue > 0:
         page = cur.fetchone()
         return render_template('page.html', page=page)
+    cur.close()    
     return '======== 404 Page Not Found ========'
 
 
