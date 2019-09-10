@@ -1,0 +1,5 @@
+mysql_host : 'sql.fyi'
+mysql_user : 'washnotes'
+# Enter your mysql password
+mysql_password : '2q2XsZQTV2RFYsOQ'
+mysql_db : 'washnotes'
