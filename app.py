@@ -25,20 +25,10 @@ def page_not_found(e):
     
 @app.route('/')
 def index():
-    cur = mysql.connection.cursor()
-    resultValue = cur.execute("SELECT * FROM pages WHERE page = 'index'")
-    if resultValue > 0:
-        page = cur.fetchone()
-    cur.close()
-    return render_template('page.html', page=page)
-
-#redirect    
-@app.route('/index/')
-def hello():
-    return redirect('/')
+    return redirect('/index')
     
         
-@app.route('/pages/<page>/')
+@app.route('/<page>')
 def page(page):
     cur = mysql.connection.cursor()
 #   debug

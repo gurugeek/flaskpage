@@ -1,1 +1,1 @@
- gunicorn -w 5 app:app  -b localhost:8111
+ gunicorn -w 10 app:app  -b localhost:8111

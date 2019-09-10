@@ -2,3 +2,6 @@
 templates/.DS_Store
 static/.DS_Store
 __pycache__/app.cpython-37.pyc
+logs/combined.outerr.log
+logs/err.log
+logs/out.log
