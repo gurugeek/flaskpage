@@ -16,10 +16,7 @@ app.config['MYSQL_DB'] = db['mysql_db']
 app.config['MYSQL_CURSORCLASS'] = 'DictCursor'
 mysql = MySQL(app)
 
-app.add_url_rule(
-    app.static_url_path + '/<path:filename>',
-    endpoint='public', view_func=app.send_static_file)
-    
+
     
 # general 404
 @app.errorhandler(404)
